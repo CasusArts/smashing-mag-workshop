@@ -28,12 +28,8 @@ function Products({ products }) {
       <Heading as='h1' sx={{ textAlign: 'center' }}>
         Products
       </Heading>
-      {/**
-       * Step 9
-       * Delete the <p /> tag below and uncomment the line with <ProductCatalog />
-       */}
-      <p>Here we will display our products</p>
-      {/* <ProductCatalog products={products} /> */}
+
+      <ProductCatalog products={products} />
     </Layout>
   );
 }
