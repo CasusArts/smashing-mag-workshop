@@ -20,6 +20,7 @@ const MarketingCopy = ({ slice }) => {
             borderBottom: '5px solid black',
             paddingTop: '40px',
             paddingBottom: '40px',
+            background: ['tomato', 'purple', 'lightgreen']
           }}>
           <Box as='p' sx={{ fontWeight: 'bold', marginBottom: '16px' }}>
             {slice.primary.blurb}
