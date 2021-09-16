@@ -16,15 +16,15 @@ import { Fade } from 'react-awesome-reveal';
  * Uncomment the getStaticProps function so we can get data to the landing page.
  */
 
-// export async function getStaticProps() {
-//   const home = await Client().getByUID('page', 'home');
+export async function getStaticProps() {
+  const home = await Client().getByUID('page', 'home');
 
-//   return {
-//     props: {
-//       home,
-//     },
-//   };
-// }
+  return {
+    props: {
+      home,
+    },
+  };
+}
 
 export default function Home(props) {
   return (
@@ -62,11 +62,11 @@ export default function Home(props) {
           </Fade>
         </Box>
         <h1>Fill this page up with stuff</h1>
-        {/** Step 2
+        {/* * Step 2
          * Uncomment SliceZone component below so we can render the content for the home page
          */}
-        {/* <SliceZone slices={props.home.data.body} /> */}
-        {/* <Contact /> */}
+        <SliceZone slices={props.home.data.body} />
+        <Contact />
       </section>
     </Layout>
   );
